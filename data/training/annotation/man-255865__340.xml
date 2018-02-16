@@ -1,0 +1,26 @@
+<annotation verified="yes">
+	<folder>pixabay</folder>
+	<filename>man-255865__340.jpg</filename>
+	<path>/Users/yonghah/Desktop/annotation/image/pixabay/man-255865__340.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>340</width>
+		<height>340</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>bikerider</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>62</xmin>
+			<ymin>22</ymin>
+			<xmax>257</xmax>
+			<ymax>340</ymax>
+		</bndbox>
+	</object>
+</annotation>

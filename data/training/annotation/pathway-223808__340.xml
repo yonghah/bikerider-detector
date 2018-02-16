@@ -1,0 +1,26 @@
+<annotation verified="yes">
+	<folder>pixabay</folder>
+	<filename>pathway-223808__340.jpg</filename>
+	<path>/Users/yonghah/Desktop/annotation/image/pixabay/pathway-223808__340.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>222</width>
+		<height>340</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>bikerider</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>102</xmin>
+			<ymin>178</ymin>
+			<xmax>135</xmax>
+			<ymax>247</ymax>
+		</bndbox>
+	</object>
+</annotation>

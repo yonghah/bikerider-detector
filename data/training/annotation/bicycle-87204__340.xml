@@ -1,0 +1,26 @@
+<annotation>
+	<folder>pixabay</folder>
+	<filename>bicycle-87204__340.jpg</filename>
+	<path>/Users/yonghah/Desktop/annotation/image/pixabay/bicycle-87204__340.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>510</width>
+		<height>340</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>bikerider</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>194</xmin>
+			<ymin>92</ymin>
+			<xmax>287</xmax>
+			<ymax>262</ymax>
+		</bndbox>
+	</object>
+</annotation>

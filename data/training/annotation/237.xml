@@ -1,0 +1,26 @@
+<annotation>
+	<folder>google_resize</folder>
+	<filename>237.png</filename>
+	<path>/Users/yonghah/Desktop/annotation/image/google_resize/237.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>333</width>
+		<height>500</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>bikerider</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>8</xmin>
+			<ymin>39</ymin>
+			<xmax>294</xmax>
+			<ymax>490</ymax>
+		</bndbox>
+	</object>
+</annotation>

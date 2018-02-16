@@ -1,0 +1,26 @@
+<annotation>
+	<folder>pixabay</folder>
+	<filename>mount-kofel-55360__340.jpg</filename>
+	<path>/Users/yonghah/Desktop/annotation/image/pixabay/mount-kofel-55360__340.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>453</width>
+		<height>340</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>bikerider</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>196</xmin>
+			<ymin>221</ymin>
+			<xmax>248</xmax>
+			<ymax>321</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>pixabay</folder>
+	<filename>action-71647__340.jpg</filename>
+	<path>/Users/yonghah/Desktop/annotation/image/pixabay/action-71647__340.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>513</width>
+		<height>340</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>bikerider</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>243</xmin>
+			<ymin>43</ymin>
+			<xmax>396</xmax>
+			<ymax>306</ymax>
+		</bndbox>
+	</object>
+</annotation>
