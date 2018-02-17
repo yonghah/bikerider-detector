@@ -5,12 +5,12 @@ Usage:
   # From tensorflow/models/
   # Create train data:
   python generate_tfrecord.py \
-      --csv_input=../../data/training/data/train_labels.csv \
-      --output_path=../../data/training/data/train.record
+      --csv_input=../data/training/data/train_labels.csv \
+      --output_path=../data/training/data/train.record
   # Create test data:
     python generate_tfrecord.py \
-        --csv_input=../../data/training/data/test_labels.csv \
-        --output_path=../../data/training/data/test.record
+        --csv_input=../data/training/data/test_labels.csv \
+        --output_path=../data/training/data/test.record
 """
 
 
@@ -109,7 +109,7 @@ def create_tf_example(group, path):
 
 def main(_):
     writer = tf.python_io.TFRecordWriter(FLAGS.output_path)
-    path = os.path.join('../../data/training/image')
+    path = os.path.join('../data/training/image')
     examples = pd.read_csv(FLAGS.csv_input)
     grouped = split(examples, 'filename')
     for group in grouped:

@@ -25,7 +25,7 @@ def main():
 def split(test_ratio):
     '''split function'''
     print(test_ratio)
-    csv_dir = "../../data/training/data"
+    csv_dir = "../data/training/data"
     full_labels = pd.read_csv(os.path.join(csv_dir, 'bikerider_labels.csv'))
     gb = full_labels.groupby('filename')
     grouped_list = [gb.get_group(x) for x in gb.groups]

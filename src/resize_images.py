@@ -2,8 +2,8 @@
 resize images in a folder
 usage:
     python resize_images.py --size=500 \
-        --in_dir=../../data/training/image \
-        --out_dir=../../data/training/resized
+        --in_dir=../data/training/image \
+        --out_dir=../data/training/resized
 """
 
 import argparse
