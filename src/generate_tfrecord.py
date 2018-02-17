@@ -2,7 +2,6 @@
 mostly from
 https://github.com/datitran/raccoon_dataset/blob/master/generate_tfrecord.py
 Usage:
-  # From tensorflow/models/
   # Create train data:
   python generate_tfrecord.py \
       --csv_input=../data/training/data/train_labels.csv \
