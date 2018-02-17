@@ -27,19 +27,46 @@ Then I annotated the region of bike riders in each image with [LabelImg](https:/
 ## Create dataset
 
 1. Split train and test dataset
-  - use split_train_test.py
-  - this will create csv files that will be fed into next step
-2. Convert the two dataset into tfrecord format
-  - separately apply generate_tfrecord.py to train and test dataset
+  - use split_train_test.py under src
+  ```
+   python split_train_test.py --test_ratio=0.3
+  ```
+  - this will create csv files (train_labels.csv, test_labels.csv) under ../data/training/data
   
+2. Convert the two dataset into tfrecord format
+  - use generate_tfrecord.py under src
+  ```
+    python generate_tfrecord.py \
+      --csv_input=../data/training/data/train_labels.csv \
+      --output_path=../data/training/data/train.record
+
+    python generate_tfrecord.py \
+        --csv_input=../data/training/data/test_labels.csv \
+        --output_path=../data/training/data/test.record
+  ```  
 
 ## Transfer learning
 
 We are going to use Tensorflow Object Detection API to train a detector. See [here](https://github.com/tensorflow/models/tree/master/research/object_detection) to set up it.
 
+Instead of training the detector from scratch, I used faster_rcnn_resnet101_coco as basis. Modify the path of the ckpt file accordingly in data/training/config/faster_rcnn_resnet101_coco.config (line 112). You may need to change the path of train.record, test.record, and object-detection.pbtxt at line 127, 129, 141, 143 as well.
 
+Then run train.py of object detection api (change path accordingly).
+```
+# move to your tensorflow object detection directory
+cd ~/repo/tensorflow/models/research
+# change parameters accordingly
+python object_detection/train.py \
+--logtostderr \
+--pipeline_config_path=/home/ubuntu/repo/bike-detector/data/training/config/faster_rcnn_resnet101_coco.config \
+--train_dir=/home/ubuntu/repo/bike-detector/data/training/train
+```
+It took me ~3 hours with Amazon AWS p2.xlarge instance.
 
 ## Result
+Once training is done, you can use the trained network to detect bike riders. See the notebook:
+https://github.com/yonghah/bikerider-detector/blob/master/notebook/test-bikerider-detector.ipynb
+
 <img src="report/bikedetector1.png" width="400">
 <img src="report/bikedetector3.png" width="400">
 
