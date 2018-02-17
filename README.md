@@ -70,3 +70,5 @@ https://github.com/yonghah/bikerider-detector/blob/master/notebook/test-bikeride
 <img src="report/bikedetector1.png" width="400">
 <img src="report/bikedetector3.png" width="400">
 
+You can download trained network from here: 
+https://umich.box.com/s/ncqywd2d8nfahzt1nmz6e2218q61mmad
